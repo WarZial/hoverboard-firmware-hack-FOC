@@ -643,13 +643,13 @@
 #endif
 #if defined(FEEDBACK_SERIAL_USART2) || defined(CONTROL_SERIAL_USART2) || defined(DEBUG_SERIAL_USART2) || defined(SIDEBOARD_SERIAL_USART2)
   #ifndef USART2_BAUD
-    #define USART2_BAUD           115200                  // UART2 baud rate (long wired cable)
+    #define USART2_BAUD           9600                  // UART2 baud rate (long wired cable) Par defaut
   #endif
   #define USART2_WORDLENGTH       UART_WORDLENGTH_8B      // UART_WORDLENGTH_8B or UART_WORDLENGTH_9B
 #endif
 #if defined(FEEDBACK_SERIAL_USART3) || defined(CONTROL_SERIAL_USART3) || defined(DEBUG_SERIAL_USART3) || defined(SIDEBOARD_SERIAL_USART3)
   #ifndef USART3_BAUD
-    #define USART3_BAUD           115200                  // UART3 baud rate (short wired cable)
+    #define USART3_BAUD           9600                  // UART3 baud rate (short wired cable) Par defaut : 115200
   #endif
   #define USART3_WORDLENGTH       UART_WORDLENGTH_8B      // UART_WORDLENGTH_8B or UART_WORDLENGTH_9B
 #endif
